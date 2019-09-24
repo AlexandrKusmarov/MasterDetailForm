@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MasterDetailForm.MainPage"
+             Title="MasterApp">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" BackgroundColor="#d1c4e9">
+            <ContentPage.Content>
+                <StackLayout Padding="5,30,5,5">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Image WidthRequest="65" HeightRequest="65" Aspect="AspectFit" Source="eyes.jpg" VerticalOptions="Center"></Image>
+                        <Label Text="Hello!" FontSize="24" FontAttributes="Bold" VerticalOptions="Center"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Image WidthRequest="24" HeightRequest="24" Aspect="AspectFit" Source="calculator.png" VerticalOptions="Center"></Image>
+                    <Button Text="Калькулятор" HorizontalOptions="FillAndExpand" Clicked="Button1_Click"></Button>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Image WidthRequest="24" HeightRequest="24" Aspect="AspectFit" Source="writing.png" VerticalOptions="Center"></Image>
+                        <Button Text="Заметки" HorizontalOptions="FillAndExpand" Clicked="Button2_Click"></Button>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Image WidthRequest="24" HeightRequest="24" Aspect="AspectFit" Source="coin.png" VerticalOptions="Center"></Image>
+                        <Button Text="Курс валют" HorizontalOptions="FillAndExpand" Clicked="Button3_Click"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <Label Text="Deatail Page" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

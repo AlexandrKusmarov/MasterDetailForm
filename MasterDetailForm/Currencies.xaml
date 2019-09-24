@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MasterDetailForm.Currencies"
+             Title="Currencies">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#e3f2fd">
+        <Label Text="Курс валют на сегодня" VerticalOptions="Start" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+        <Button x:Name="ButtonUSD" Text="Вывести курс доллара" Clicked="getUSD"></Button>
+        <Button x:Name="ButtonEUR" Text="Вывести курс евро" Clicked="getEUR"></Button>
+        <Button x:Name="ButtonBYN" Text="Вывести курс бел. рубля" Clicked="getBYN"></Button>
+        <Button x:Name="ButtonTRY" Text="Вывести курс турецкой лиры" Clicked="getTRY"></Button>
+        <Button x:Name="ButtonCHF" Text="Вывести курс швейцарского франка" Clicked="getCHF"></Button>
+        <Button x:Name="ButtonAUD" Text="Вывести курс австралийского доллара" Clicked="getAUD"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
